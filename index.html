@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>유튜브 댓글 자동 답글 도구</title>
+<style>
+  :root{color-scheme:light dark}
+  body{margin:0;background:#0f1115;color:#e8eaed;
+       font:16px/1.75 "Malgun Gothic",system-ui,sans-serif}
+  .wrap{max-width:720px;margin:0 auto;padding:64px 24px 96px}
+  h1{font-size:26px;margin:0 0 6px}
+  .sub{color:#9aa3b2;margin:0 0 40px}
+  h2{font-size:18px;margin:36px 0 10px}
+  p,li{color:#d7dbe3}
+  ul{padding-left:20px}
+  a{color:#ff8f82}
+  .card{background:#171a21;border:1px solid #262b36;border-radius:12px;
+        padding:18px 20px;margin:18px 0}
+  footer{margin-top:52px;padding-top:20px;border-top:1px solid #262b36;
+         color:#9aa3b2;font-size:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>유튜브 댓글 자동 답글 도구</h1>
+  <p class="sub">개인이 자기 유튜브 채널을 운영하려고 만들어 혼자 쓰는 도구입니다.</p>
+
+  <p>내 채널 영상에 달린 댓글을 읽어 답글 초안을 만들고, 확인을 거쳐 답글을 답니다.
+     제작자 본인의 채널에만 쓰며, 다른 사람에게 배포하거나 판매하지 않습니다.</p>
+
+  <div class="card">
+    <h2 style="margin-top:0">하는 일</h2>
+    <ul>
+      <li>내 채널 영상의 새 댓글을 가져옵니다</li>
+      <li>댓글에 맞는 답글 초안을 만듭니다</li>
+      <li>확인을 거쳐 내 채널 이름으로 답글을 답니다</li>
+    </ul>
+  </div>
+
+  <h2>쓰는 구글 권한</h2>
+  <p>유튜브 데이터 API의 <code>youtube.force-ssl</code> 권한을 씁니다.
+     댓글을 읽고 답글을 다는 데만 쓰며, 영상·수익·계정 설정은 건드리지 않습니다.</p>
+
+  <h2>개인정보</h2>
+  <p>이 도구가 다루는 정보와 보관 방식은 <a href="privacy.html">개인정보처리방침</a>에 적어 두었습니다.
+     한 줄로 줄이면 <b>모든 자료는 제작자 본인 컴퓨터에만 있고, 누구에게도 넘기지 않습니다.</b></p>
+
+  <footer>
+    문의: <a href="mailto:sprin9133@gmail.com">sprin9133@gmail.com</a><br>
+    이 도구는 YouTube API 서비스를 사용합니다 —
+    <a href="https://www.youtube.com/t/terms" rel="noreferrer">YouTube 서비스 약관</a> ·
+    <a href="https://policies.google.com/privacy" rel="noreferrer">Google 개인정보처리방침</a>
+  </footer>
+</div>
+</body>
+</html>

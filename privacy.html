@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>개인정보처리방침 — 유튜브 댓글 자동 답글 도구</title>
+<style>
+  :root{color-scheme:light dark}
+  body{margin:0;background:#0f1115;color:#e8eaed;
+       font:16px/1.75 "Malgun Gothic",system-ui,sans-serif}
+  .wrap{max-width:720px;margin:0 auto;padding:64px 24px 96px}
+  h1{font-size:24px;margin:0 0 6px}
+  .sub{color:#9aa3b2;margin:0 0 36px}
+  h2{font-size:18px;margin:34px 0 8px}
+  p,li{color:#d7dbe3}
+  ul{padding-left:20px}
+  a{color:#ff8f82}
+  table{border-collapse:collapse;width:100%;margin:12px 0}
+  th,td{border:1px solid #262b36;padding:8px 10px;text-align:left;font-size:15px}
+  th{background:#171a21;color:#e8eaed}
+  footer{margin-top:52px;padding-top:20px;border-top:1px solid #262b36;
+         color:#9aa3b2;font-size:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>개인정보처리방침</h1>
+  <p class="sub">유튜브 댓글 자동 답글 도구 · 최종 수정 2026년 8월 29일</p>
+
+  <p>이 도구는 제작자가 <b>자신의 유튜브 채널을 운영하려고 만들어 혼자 쓰는 개인용 프로그램</b>입니다.
+     서버가 없고, 제작자 본인의 컴퓨터에서만 돌아갑니다.
+     다른 사용자를 받지 않으며 회원가입도 없습니다.</p>
+
+  <h2>1. 어떤 정보를 다루나</h2>
+  <table>
+    <tr><th>정보</th><th>어디서</th><th>왜</th></tr>
+    <tr><td>내 채널 영상에 달린 공개 댓글 (작성자 표시 이름, 내용, 댓글 ID)</td>
+        <td>YouTube Data API</td><td>답글을 달기 위해</td></tr>
+    <tr><td>내 채널 ID·채널 이름</td><td>YouTube Data API</td>
+        <td>내 채널이 맞는지 확인하기 위해</td></tr>
+    <tr><td>구글 로그인 토큰</td><td>구글 OAuth</td>
+        <td>매번 로그인하지 않고 API를 쓰기 위해</td></tr>
+  </table>
+  <p>이름·전화번호·주소·결제 정보 같은 것은 받지도, 저장하지도 않습니다.</p>
+
+  <h2>2. 어디에 보관하나</h2>
+  <p><b>전부 제작자 본인 컴퓨터 안에만 있습니다.</b> 외부 서버로 보내지 않고,
+     데이터베이스를 따로 운영하지 않습니다. 구글 로그인 토큰은 그 컴퓨터의 파일
+     (<code>token.json</code>)로만 보관합니다.</p>
+
+  <h2>3. 누구에게 넘기나</h2>
+  <p><b>아무에게도 넘기지 않습니다.</b> 판매·대여·공유·광고 활용을 하지 않습니다.
+     답글 초안을 만들 때 댓글 내용이 언어모델 서비스로 전달되며, 그 목적은 답글 작성 하나뿐입니다.</p>
+
+  <h2>4. 얼마나 보관하나</h2>
+  <ul>
+    <li>이미 답글을 단 댓글 ID — 같은 댓글에 두 번 답글을 달지 않으려고 보관합니다</li>
+    <li>실행 기록(로그) — 문제가 났을 때 원인을 찾으려고 남깁니다</li>
+    <li>구글 로그인 토큰 — 연결을 끊거나 파일을 지우면 사라집니다</li>
+  </ul>
+  <p>필요 없어지면 해당 파일을 지우는 것으로 즉시 삭제됩니다.</p>
+
+  <h2>5. 구글 사용자 데이터 정책</h2>
+  <p>이 도구가 구글 API로 받은 정보의 사용과 다른 앱으로의 전송은
+     <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noreferrer">Google API Services User Data Policy</a>를 따르며,
+     여기에는 <b>제한적 사용(Limited Use)</b> 요건이 포함됩니다.</p>
+
+  <h2>6. 연결 끊기</h2>
+  <p>구글 계정의 <a href="https://myaccount.google.com/permissions" rel="noreferrer">타사 앱 및 서비스</a>에서
+     이 앱의 접근 권한을 언제든 취소할 수 있습니다. 취소하면 이 도구는 더 이상 댓글을 읽거나 답글을 달 수 없습니다.</p>
+
+  <h2>7. 문의</h2>
+  <p><a href="mailto:sprin9133@gmail.com">sprin9133@gmail.com</a></p>
+
+  <footer>
+    <a href="index.html">← 처음으로</a><br><br>
+    이 도구는 YouTube API 서비스를 사용합니다 —
+    <a href="https://www.youtube.com/t/terms" rel="noreferrer">YouTube 서비스 약관</a> ·
+    <a href="https://policies.google.com/privacy" rel="noreferrer">Google 개인정보처리방침</a>
+  </footer>
+</div>
+</body>
+</html>
